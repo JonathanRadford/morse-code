@@ -7,73 +7,74 @@ let word;
 
 //take the word presented and turn it into an array
 const getWord = (e) => {
-  word = Array.from(e.target.value)
-  return console.log(word);
+  word = Array.from(e.target.value);
+  let newWord = word.map(getLetter).join("");
+  return output.innerHTML = newWord;
 }
-
 
 //find out which letter has been pressed and send that informatiom to info
 const getLetter = () => {
   for(let i = 0; i < word.length; i++){
     let message = word[i];{
       if (message === "a") {
-        return output.innerHTML = ".-";
+        return ".-";
       } else if (message === "b") {
-        return output.innerHTML = "-..."
+        return "-..."
       } else if (message === "c") {
-        return output.innerHTML = "-.-.";
+        return "-.-.";
       } else if (message === "d") {
-        return output.innerHTML = "-..";
+        return "-..";
       } else if (message === "e") {
-        return output.innerHTML = ".";
+        return ".";
       } else if (message === "f") {
-        return output.innerHTML ="..-.";
+        return "..-.";
       } else if (message === "g") {
-        return output.innerHTML = "--.";
+        return "--.";
       } else if (message === "h") {
-        return output.innerHTML = "....";
+        return "....";
       } else if (message === "i") {
-        return output.innerHTML = "..";
+        return "..";
       } else if (message === "j") {
-        return output.innerHTML = ".---";
+        return ".---";
       } else if (message === "k") {
-        return output.innerHTML = "-.-";
+        return "-.-";
       } else if (message === "l") {
-        return output.innerHTML =  ".-..";
+        return  ".-..";
       } else if (message === "m") {
-        return output.innerHTML = "--";
+        return  "--";
       } else if (message === "n") {
-        return output.innerHTML = "-.";
+        return "-.";
       } else if (message === "o") {
-        return output.innerHTML =  "---";
+        return  "---";
       } else if (message === "p") {
-        return output.innerHTML = ".--.";
+        return  ".--.";
       } else if (message === "q") {
-        return output.innerHTML = "--.-";
+        return "--.-";
       } else if (message === "r") {
-        return output.innerHTML = ".-.";
+        return ".-.";
       } else if (message === "s") {
-        return output.innerHTML = "...";
+        return "...";
       } else if (message === "t") {
-        return output.innerHTML ="-";
+        return "-";
       } else if (message === "u") {
-        return output.innerHTML = "..-";
+        return "..-";
       } else if (message === "v") {
-        return output.innerHTML = "...-";
+        return  "...-";
       } else if (message === "w") {
-        return output.innerHTML = ".--";
+        return ".--";
       } else if (message === "x") {
-        return output.innerHTML = "-..-";
+        return "-..-";
       } else if (message === "y") {
-        return output.innerHTML = "-.--";
+        return "-.--";
       } else if (message === "z") {
-        return output.innerHTML = "--..";
+        return "--..";
       }
     } 
 }
 }
 
+
 //take a word, and break it down, put it into an array and search through the letters
 const input = document.getElementById("input").addEventListener("blur", getWord)
-const button = document.getElementById("btn").addEventListener("click", getLetter)
+const button = document.getElementById("btn")
 const output = document.getElementById("output")
