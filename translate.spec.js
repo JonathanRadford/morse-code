@@ -139,3 +139,4 @@ it("should take a word and make the letters into an array", () => {
   const result = wordArr("Hello");
   expect(result).toStrictEqual(["H","e","l","l","o"])
 })
+
