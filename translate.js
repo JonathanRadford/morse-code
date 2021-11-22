@@ -56,3 +56,7 @@ export const translate = (message) => {
   } 
 } 
 
+export const wordArr = () => {
+    let word = Array.from("Hello")
+    return word;
+  }

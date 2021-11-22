@@ -1,6 +1,8 @@
-import { translate } from "./translate.js";
+import { translate, wordArr } from "./translate.js";
 import { it, expect } from '@jest/globals';
 //English to Morse Code
+
+
 //it should translate A to .- 
 it("should translate A to .-", () => {
     const result = translate("a");
@@ -132,3 +134,8 @@ it("should translate Y to --..", () => {
   expect(result).toBe("--..");
 })
 
+//need to take a input from the screen and break it into an array
+it("should take a word and make the letters into an array", () => {
+  const result = wordArr("Hello");
+  expect(result).toStrictEqual(["H","e","l","l","o"])
+})
