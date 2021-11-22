@@ -53,7 +53,7 @@ it("should translate J to .---", () => {
 })
 //it should translate K to -.- 
 it("should translate K to -.-", () => {
-  const result = translate("a");
+  const result = translate("k");
   expect(result).toBe("-.-");
 })
 //it should translate L to .-.. 
@@ -88,7 +88,7 @@ it("should translate Q to --.-", () => {
 })
 //it should translate R to .-.
 it("should translate R to .-.", () => {
-  const result = translate("R");
+  const result = translate("r");
   expect(result).toBe(".-.");
 })
 //it should translate S to ... 
@@ -113,7 +113,7 @@ it("should translate V to ...-", () => {
 })
 //it should translate W to .-- 
 it("should translate W to .--", () => {
-  const result = translate("a");
+  const result = translate("w");
   expect(result).toBe(".--");
 })
 //it should translate X to -..-
@@ -123,7 +123,7 @@ it("should translate X to -..-", () => {
 })
 //it should translate Y to -.--
 it("should translate Y to -.--", () => {
-  const result = translate("a");
+  const result = translate("y");
   expect(result).toBe("-.--");
 })
 //it should translate Z to --..
