@@ -1,18 +1,18 @@
 //take the input information from the HTML
 //convert the letter to morse code on click
 //return and print that information back to the html
-let info;
 let word;
 //take the word presented and turn it into an array
-const getWord = (e) => {
+export const getWord = (e) => {
   word = Array.from(e.target.value);
   let newWord = word.map(getLetter).join("");
   return output.innerHTML = newWord;
 }
+
 //find out which letter has been pressed and send that informatiom to info
-const getLetter = (message) => {
+export const getLetter = (message) => {
       if (message === "a") {
-        return console.log(".-");
+        return ".-";
       } else if (message === "b") {
         return "-..."
       } else if (message === "c") {
