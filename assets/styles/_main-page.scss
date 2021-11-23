@@ -5,3 +5,20 @@
   align-items: center;
   padding: 50px 0 50px 0;
 }
+#input{
+  margin: 50px 0 0 0;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  border: 1px solid $tertiary-colors;
+  background-color: $secondary-colors;
+}
+
+#output{
+  margin: 50px 0 0 0;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  border: 1px solid $tertiary-colors;
+  background-color: $secondary-colors;
+}
