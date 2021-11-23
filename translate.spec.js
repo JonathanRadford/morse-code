@@ -1,4 +1,4 @@
-import { translate, wordArr } from "./translate.js";
+import { translate } from "./translate.js";
 import { it, expect } from '@jest/globals';
 //English to Morse Code
 
@@ -140,3 +140,9 @@ it("should take a word and make the letters into an array", () => {
   expect(result).toStrictEqual(["H","e","l","l","o"])
 })
 
+
+//
+it("should translate A to .-", () => {
+    const result = translate("a");
+    expect(result).toBe(".-");
+})

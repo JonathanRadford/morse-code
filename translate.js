@@ -1,4 +1,4 @@
-const translate = (message) => {
+export const translate = (message) => {
   if (message == "a") {
     return ".-";
   } else if (message === "b") {
@@ -51,14 +51,10 @@ const translate = (message) => {
     return "-.--";
   } else if (message === "z") {
     return "--..";
-  }else {
-    return undefined;
-  } 
+  }
 } 
 
-
-
-const wordArr = () => {
+export const wordArr = () => {
     let word = Array.from("Hello")
     return word;
   }
