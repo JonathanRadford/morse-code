@@ -3,14 +3,14 @@
 //return and print that information back to the html
 let word;
 //take the word presented and turn it into an array
-export const getWord = (e) => {
+const getWord = (e) => {
   word = Array.from(e.target.value);
   let newWord = word.map(getLetter).join("");
   return output.innerHTML = newWord;
 }
 
 //find out which letter has been pressed and send that informatiom to info
-export const getLetter = (message) => {
+const getLetter = (message) => {
       if (message === "a") {
         return ".-";
       } else if (message === "b") {
@@ -63,7 +63,9 @@ export const getLetter = (message) => {
         return "-.--";
       } else if (message === "z") {
         return "--..";
-      } 
+      } else if (message === " ") {
+        return " ";
+      }
     } 
 
 //take a word, and break it down, put it into an array and search through the letters
