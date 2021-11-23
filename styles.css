@@ -37,18 +37,32 @@ h1, h2 {
 
 #input {
   margin: 50px 0 0 0;
+  width: 300px;
   padding-top: 50px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border: 1px solid #ececec;
   background-color: #494b4b;
 }
 
 #output {
   margin: 50px 0 0 0;
+  width: 300px;
   padding-top: 50px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border: 1px solid #ececec;
   background-color: #494b4b;
+}
+
+@media screen and (min-width: 800px) {
+  #input {
+    font-size: 2rem;
+    width: 900px;
+  }
+
+  #output {
+    font-size: 2rem;
+    width: 900px;
+  }
 }

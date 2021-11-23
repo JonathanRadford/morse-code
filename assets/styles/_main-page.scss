@@ -7,18 +7,31 @@
 }
 #input{
   margin: 50px 0 0 0;
+  width: 300px;
   padding-top: 50px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border: 1px solid $tertiary-colors;
   background-color: $secondary-colors;
 }
 
 #output{
   margin: 50px 0 0 0;
+  width: 300px;
   padding-top: 50px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border: 1px solid $tertiary-colors;
   background-color: $secondary-colors;
+}
+
+@media screen and (min-width: 800px){
+  #input{
+    font-size: 2rem;
+    width: 900px;
+  }
+  #output{
+    font-size: 2rem;
+    width: 900px;
+  }
 }
