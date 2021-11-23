@@ -1,15 +1,27 @@
 @import "_variables";
 
-#btn{
+.btn{
+  margin: 10px;
+  border-radius:15px;
+  margin: 10px;
+  padding: 5px;
+  background-color: $secondary-colors;
+  font-size: 1rem;
+}
+
+#buttons{
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-button{
-  border-radius:15px;
-  margin: 5px;
-  padding: 5px;
-  background-color: $secondary-colors;
-  font-size: 1rem;
+
+@media screen and (min-width: 800px){
+  .btn{
+    border-radius:15px;
+    margin: 5px;
+    padding: 5px;
+    background-color: $secondary-colors;
+    font-size: 2rem;
+  }
 }

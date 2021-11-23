@@ -1,17 +1,27 @@
-#btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-button {
+.btn {
+  margin: 10px;
   border-radius: 15px;
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
   background-color: #494b4b;
   font-size: 1rem;
 }
 
+#buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 800px) {
+  .btn {
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #494b4b;
+    font-size: 2rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +34,7 @@ button {
 
 h1, h2 {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 #translator {
