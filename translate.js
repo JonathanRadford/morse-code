@@ -52,10 +52,7 @@ export const getLetter = (message) => {
         return "-.--";
       } else if (message === "z") {
         return "--..";
+      } else if (message === " ") {
+        return " / ";
       } 
 } 
-  export const getWord = () => {
-    let word = Array.from("hello");
-    let newWord = word.map(getLetter).join("");
-    return newWord;
-  }

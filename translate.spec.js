@@ -1,4 +1,4 @@
-import { getLetter, getWord } from "./translate.js";
+import { getLetter } from "./translate.js";
 import { it, expect } from '@jest/globals';
 //English to Morse Code
 
@@ -139,3 +139,4 @@ it("should take a word and make the letters into an array, turn them into Morse 
   const result = getWord("hello");
   expect(result).toBe("......-...-..---")
 })
+
